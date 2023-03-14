@@ -42,7 +42,7 @@
 
     <!-- TAILWIND CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
-    <script src="./tailwind.config.js"></script>
+    <script src="./tailwind-config.js"></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -53,9 +53,109 @@
 
   <body>
 
+    <!-- HEADER -->
+    <header>
+      <nav class="fixed w-full bg-gradient-to-b from-black/60 py-5 text-white"> 
+        <div class="container">
+          <div class="flex items-center">
+            <a href="index.html">
+              <img src="./assets/img/logo.svg" alt="logo">
+            </a>
+            <div class="flex grow">
 
+              <ul class="flex items-center ml-5 font-bold">
+                <li class="mx-6 active">
+                  <a href="#about">A Bocad'oro</a>
+                </li>
+                <li class="mx-6">
+                  <a href="#products">Produtos</a>
+                </li>
+                <li class="mx-6">
+                  <a href="#products">Pesos Embalagens</a>
+                </li>
+                <li class="mx-6">
+                  <a href="#contact" class="bg-primary px-10 py-3 rounded-lg hover:bg-primary-dark duration-200">Entre em Contato</a>
+                </li>
+              </ul>
+
+              <ul class="flex items-center mx-10">
+                <li class="mx-3">
+                  <a href="#"> 
+                    <img src="./assets/img/flag-brazil.svg" alt="flag-brazil">
+                  </a>
+                </li>
+                <li class="mx-3">
+                  <a href="#"> 
+                    <img src="./assets/img/flag-usa.svg" alt="flag-usa">
+                  </a>
+                </li>
+                <li class="mx-3">
+                  <a href="#"> 
+                    <img src="./assets/img/flag-spain.svg" alt="flag-spain">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="flex items-center">
+                <li class="mx-3">
+                  <a href="#" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="mx-3">
+                  <a href="#" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="mx-3">
+                  <a href="#" target="_blank">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HOME -->
+    <main id="home">
+
+      <!-- BANNER -->
+      <section id="banner" class="bg-slate-500 text-white">
+        <div class="container">
+          <div class="flex  items-center min-h-screen">
+
+            <div class="font-bold w-1/2 ml-32">
+
+              <h2 class="text-5xl">Frutas de qualidade com sabor incomparável</h2>
+              <div class="border-l border-primary pl-10 my-14 leading-8">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros est, lobortis eu cursus eu, pulvinar eu magna. Aenean non commodo orci, quis malesuada justo. Curabitur non feugiat mi, sed euismod turpis. Maecenas convallis at ante id tempus. Morbi ut porta velit. Vivamus pulvinar, nunc.</p>
+              </div>
+
+              <div>
+                <a href="#" class="border-[0.5px] rounded-lg px-12 py-3 hover:bg-primary hover:border-primary duration-200">Saiba Mais</a>
+                <a href="#" class="border-[0.5px] rounded-lg px-7 py-3 ml-2 hover:bg-primary hover:border-primary duration-200">Nossa Produção</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer></footer>
+
+    
     <!-- js -->
     <script src="./assets/js/main.js"></script>
-    
+
+  
   </body>
+
 </html>
