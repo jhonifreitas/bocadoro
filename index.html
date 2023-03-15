@@ -55,7 +55,7 @@
 
     <!-- HEADER -->
     <header>
-      <nav class="fixed w-full bg-gradient-to-b from-black/60 py-5 text-white"> 
+      <nav class="fixed w-full bg-gradient-to-b from-black/60 py-5 text-white z-50"> 
         <div class="container">
           <div class="flex items-center">
             <a href="index.html">
@@ -125,8 +125,15 @@
     <main id="home">
 
       <!-- BANNER -->
-      <section id="banner" class="bg-slate-500 text-white">
-        <div class="container">
+      <section id="banner" class="bg-slate-500 text-white relative">
+
+        <video src="./assets/img/banner.mp4" autoplay loop muted class="absolute object-cover w-full h-full"></video> 
+
+        <div class="absolute w-full h-full bg-black/50 mix-blend-multiply">
+
+        </div> 
+        <div class="container relative">
+
           <div class="flex  items-center min-h-screen">
 
             <div class="font-bold w-1/2 ml-32">
@@ -146,7 +153,43 @@
         </div>
       </section>
 
+      <!-- ABOUT -->
+      <section id="about" class="py-20">
+        <div class="container">
+          <div class="flex gap-20">
+            <div>
+              <h2 class="text-secondary text-4xl font-bold mb-12">Entregamos saúde e sabor para o mundo</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="leading-8">
+              <p class="mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros est, lobortis eu cursus eu, pulvinar eu magna. Aenean non commodo orci, quis malesuada justo. Curabitur non feugiat mi, sed euismod turpis. Maecenas convallis at ante id tempus. Morbi ut porta velit. Vivamus pulvinar, nunc a tristique luctus, diam metus consectetur est, at ultrices dolor sem ac urna. Duis rutrum arcu sed mauris porttitor bibendum.</p> 
+              <p>Suspendisse in justo nisi. Suspendisse fermentum accumsan fermentum. Pellentesque imperdiet risus eget risus posuere sagittis. Suspendisse eleifend leo sed elit blandit, in scelerisque nibh faucibus. Aliquam blandit felis vel eros feugiat, sit amet gravida nisi aliquam. Aenean pulvinar vestibulum accumsan. Suspendisse potenti. Cras imperdiet euismod commodo.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-primary">
+        <div class="container text-white">
+          <div class="flex gap-12 pt-24 pb-10">
+            <div class="w-4/12 border-b-2">
+              <h2 class="text-2xl font-bold">Visão</h2>
+              <p class="leading-8 text-sm font-medium pt-8 pb-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros est, lobortis eu cursus eu, pulvinar eu magna. Aenean non commodo orci, quis malesuada justo. Curabitur non feugiat mi, sed euismod turpis. Maecenas convallis at ante id tempus. Morbi ut porta velit. Vivamus pulvinar, nunc a tristique luctus, diam metus consectetur.</p>
+            </div>
+            <div class="w-4/12 border-b-2">
+              <h2 class="text-2xl font-bold">Missão</h2>
+              <p class="leading-8 text-sm font-medium pt-8 pb-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros est, lobortis eu cursus eu, pulvinar eu magna. Aenean non commodo orci, quis malesuada justo. Curabitur non feugiat mi, sed euismod turpis. Maecenas convallis at ante id tempus. Morbi ut porta velit. Vivamus pulvinar, nunc a tristique luctus, diam metus consectetur.</p>
+            </div>
+            <div class="w-4/12 border-b-2">
+              <h2 class="text-2xl font-bold">Propósito</h2>
+              <p class="leading-8 text-sm font-medium pt-8 pb-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros est, lobortis eu cursus eu, pulvinar eu magna. Aenean non commodo orci, quis malesuada justo. Curabitur non feugiat mi, sed euismod turpis. Maecenas convallis at ante id tempus. Morbi ut porta velit. Vivamus pulvinar, nunc a tristique luctus, diam metus consectetur.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
+  
 
     <!-- FOOTER -->
     <footer></footer>
