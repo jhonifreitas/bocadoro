@@ -129,11 +129,9 @@
 
         <video src="./assets/img/banner.mp4" autoplay loop muted class="absolute object-cover w-full h-full"></video> 
 
-        <div class="absolute w-full h-full bg-black/50 mix-blend-multiply">
+        <div class="absolute w-full h-full bg-black/50 mix-blend-multiply"></div>
 
-        </div> 
         <div class="container relative">
-
           <div class="flex  items-center min-h-screen">
 
             <div class="font-bold w-1/2 ml-32">
@@ -149,7 +147,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </section>
 
@@ -169,55 +166,73 @@
         </div>
       </section>
 
-      <section>
+      <!-- GALLERY -->
+      <section id="gallery">
         <div class="container">
           <div class="flex">
-            <ul class="flex">
-                <li>
-                  <a href="#">
-                    <img src="./assets/img/Componente 1 – 1.png" class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:opacity-50 duration-500" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./assets/img/Componente 2 – 1.png" class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:opacity-50 duration-500" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./assets/img/Componente 3 – 1.png" class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:opacity-50 duration-500" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./assets/img/Componente 4 – 1.png" class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:opacity-50 duration-500" alt="">
-                  </a>
-                </li>
-              </ul>
-            
+            <div>
+              <a href="#" class="group relative overflow-hidden block">
+                <img src="./assets/img/gallery-1.png" class="group-[:hover]:scale-110 duration-500" alt="">
+                <div class=" flex items-center justify-center absolute  opacity-0 group-[:hover]:opacity-100 w-full h-full bg-black/50 top-0 left-0 ">
+                  <i class="fa-regular fa-plus fa-2x text-white border-4 rounded-circle px-1.5 py-1"></i>
+                </div>
+              </a>
+              
+            </div>
+            <div>
+              <a href="#">
+                <img src="./assets/img/gallery-2.png" class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:opacity-50 duration-500" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="./assets/img/gallery-3.png" class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:opacity-50 duration-500" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="./assets/img/gallery-4.png" class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:opacity-50 duration-500" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="bg-primary">
-        <div class="container text-white">
-          <div class="flex gap-12 pt-24 pb-10">
-            <div class="w-4/12">
-              <h2 class="text-2xl font-bold">Visão</h2>
-              <p class="leading-8 text-sm font-medium pt-8 pb-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros est, lobortis eu cursus eu, pulvinar eu magna. Aenean non commodo orci, quis malesuada justo. Curabitur non feugiat mi, sed euismod turpis. Maecenas convallis at ante id tempus. Morbi ut porta velit. Vivamus pulvinar, nunc a tristique luctus, diam metus consectetur.</p>
-              <p class="border-b-2 mr-56"></p>
+      <!-- VISION -->
+      <section id="vision" class="bg-primary py-20  text-white">
+        <div class="container">
+          <div class="flex gap-12">
+            <div class="w-4/12 group">
+              <div class="group-[:hover]:text-yellow-300 group-[:hover]:-translate-y-5 duration-200">
+                <h2 class="text-2xl font-bold ">Visão</h2>
+                <p class="leading-8 text-sm font-medium mt-8 mb-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros est, lobortis eu cursus eu, pulvinar eu magna. Aenean non commodo orci, quis malesuada justo. Curabitur non feugiat mi, sed euismod turpis. Maecenas convallis at ante id tempus. Morbi ut porta velit. Vivamus pulvinar, nunc a tristique luctus, diam metus consectetur.</p>
+              </div>
+              <div class="h-1 w-1/3 bg-white group-[:hover]:bg-yellow-300"></div>
             </div>
-            <div class="w-4/12">
-              <h2 class="text-2xl font-bold">Missão</h2>
-              <p class="leading-8 text-sm font-medium pt-8 pb-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros est, lobortis eu cursus eu, pulvinar eu magna. Aenean non commodo orci, quis malesuada justo. Curabitur non feugiat mi, sed euismod turpis. Maecenas convallis at ante id tempus. Morbi ut porta velit. Vivamus pulvinar, nunc a tristique luctus, diam metus consectetur.</p>
-              <p class="border-b-2 mr-56"></p>
+            <div class="w-4/12 group">
+              <div class="group-[:hover]:text-yellow-300 group-[:hover]:-translate-y-5 duration-200">
+                <h2 class="text-2xl font-bold ">Missão</h2>
+                <p class="leading-8 text-sm font-medium mt-8 mb-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros est, lobortis eu cursus eu, pulvinar eu magna. Aenean non commodo orci, quis malesuada justo. Curabitur non feugiat mi, sed euismod turpis. Maecenas convallis at ante id tempus. Morbi ut porta velit. Vivamus pulvinar, nunc a tristique luctus, diam metus consectetur.</p>
+              </div>
+              <div class="h-1 w-1/3 bg-white group-[:hover]:bg-yellow-300"></div>
             </div>
-            <div class="w-4/12 ">
-              <h2 class="text-2xl font-bold">Propósito</h2>
-              <p class="leading-8 text-sm font-medium pt-8 pb-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros est, lobortis eu cursus eu, pulvinar eu magna. Aenean non commodo orci, quis malesuada justo. Curabitur non feugiat mi, sed euismod turpis. Maecenas convallis at ante id tempus. Morbi ut porta velit. Vivamus pulvinar, nunc a tristique luctus, diam metus consectetur.</p>
-              <p class="border-b-2 mr-56"></p>
+            <div class="w-4/12 group">
+              <div class="group-[:hover]:text-yellow-300 group-[:hover]:-translate-y-5 duration-200">
+                <h2 class="text-2xl font-bold ">Propósito</h2>
+                <p class="leading-8 text-sm font-medium mt-8 mb-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros est, lobortis eu cursus eu, pulvinar eu magna. Aenean non commodo orci, quis malesuada justo. Curabitur non feugiat mi, sed euismod turpis. Maecenas convallis at ante id tempus. Morbi ut porta velit. Vivamus pulvinar, nunc a tristique luctus, diam metus consectetur.</p>
+              </div>
+              <div class="h-1 w-1/3 bg-white group-[:hover]:bg-yellow-300"></div>
             </div>
+            
           </div>
+        </div>
+        <hr>
+      </section>
+
+      <!-- Maps -->
+      <section class="maps">
+        <div class="container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3484.5497700292995!2d-51.067457885228485!3d-29.148467397140497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ebec4d7e0d16f%3A0x238731abe6efc139!2sFrutas%20Bocad&#39;oro%20-%20Irm%C3%A3os%20Palandi!5e0!3m2!1spt-BR!2sbr!4v1678994705236!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
         </div>
       </section>
 
@@ -225,9 +240,58 @@
   
 
     <!-- FOOTER -->
-    <footer></footer>
+    <footer id="footer">
+      <section class="bg-primary py-20  text-white">
+        <div class="container">
+         <div class="flex">
+          <div class="w-1/4">
+            <a href="">
+              <img src="./assets/img/logo.svg" alt="logo">
+            </a>
+          </div>
+          <div class="w-1/4 text-sm font-bold">
+            <div>
+              <a href="">A Bocad’oro</a>
+            </div>
+            <div class="pt-10">
+              <a href="">Produtos</a>
+            </div>
+          </div>
+          <div class="w-1/4 text-sm font-bold">
+            <div>
+              <a href="">Peso Embalagens</a>
+            </div>
+            <div class="pt-10">
+              <a href="">Fale Conosco</a>
+            </div>
+          </div>
+          <div class="w-1/4 text-sm">
+            <div>
+              <a href="" class="font-bold">Contato</a>
+            </div>
+            <div class="pt-6">
+              <h2>+55 54 3207 5113</h2>
+              <a href="">palandi@terra.com.br</a>
+            </div>
+          </div>
+          <div class="w-1/4 text-sm ">
+            <div>
+              <h2 class="font-bold">Endereço</h2>
+            </div>
+            <div class="pt-6">
+              <h2>Rua Domingos Mazzochi,</h2>
+              <h2>Caxias do Sul, 95060 000</h2>
+            </div>
+          </div>
+         </div>
+         <hr class="mt-14">
+        </div>
+        <div class="mt-14 pl-12">
+          <h2>Copyright © 2023 - Todos os direitos reservados</h2>
+        </div>
+      </section>
+    </footer>
 
-    
     <!-- js -->
     <script src="./assets/js/main.js"></script>
 
