@@ -1,6 +1,8 @@
 body{
     font-family: 'DM Sans';
-    
+}
+.text-gray{
+    color: #717171;
 }
 nav li.active{
     position: relative;
@@ -13,4 +15,14 @@ nav li.active:after{
     height: 14px;
     background-image: url("../img/nav-active.svg");
     left: -10px;
+}
+#banner .title-bg{
+    color: transparent;
+    -webkit-text-stroke: 0.3px white;
+}
+#gallery .slick .slick-list{
+    padding: 0 80px;
+}
+#products .slick .slick-list{
+    padding: 0 80px;
 }

@@ -45,9 +45,12 @@
     <script src="./tailwind-config.js"></script>
 
     <!-- CSS -->
+    <link rel="stylesheet" href="./assets/plugins/slick/slick.css">
+    <link rel="stylesheet" href="./assets/plugins/slick/slick-theme.css">
+    <link rel="stylesheet" href="./assets/plugins/fancybox/css/fancybox.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
-
+    
     
   </head>
 
@@ -125,11 +128,11 @@
     <main id="home">
 
       <!-- BANNER -->
-      <section id="banner" class="bg-slate-500 text-white relative">
+      <section id="banner" class="bg-slate-500 text-white relative py-10 overflow-hidden">
 
-        <video src="./assets/img/banner.mp4" autoplay loop muted class="absolute object-cover w-full h-full"></video> 
+        <video src="./assets/img/banner.mp4" autoplay loop muted class=" top-0 absolute object-cover w-full h-full"></video> 
 
-        <div class="absolute w-full h-full bg-black/50 mix-blend-multiply"></div>
+        <div class="absolute w-full h-full bg-black/50 mix-blend-multiply top-0"></div>
 
         <div class="container relative">
           <div class="flex  items-center min-h-screen">
@@ -148,6 +151,7 @@
             </div>
           </div>
         </div>
+        <h2 class="absolute -bottom-12 title-bg -left-8 whitespace-nowrap text-21xl font-bold z-50 uppercase leading-none opacity-25">Frutas bocad'oro</h2>
       </section>
 
       <!-- ABOUT -->
@@ -167,35 +171,47 @@
       </section>
 
       <!-- GALLERY -->
-      <section id="gallery">
-        <div class="container">
-          <div class="flex">
-            <div>
-              <a href="#" class="group relative overflow-hidden block">
-                <img src="./assets/img/gallery-1.png" class="group-[:hover]:scale-110 duration-500" alt="">
-                <div class=" flex items-center justify-center absolute  opacity-0 group-[:hover]:opacity-100 w-full h-full bg-black/50 top-0 left-0 ">
-                  <i class="fa-regular fa-plus fa-2x text-white border-4 rounded-circle px-1.5 py-1"></i>
-                </div>
-              </a>
-              
-            </div>
-            <div>
-              <a href="#">
-                <img src="./assets/img/gallery-2.png" class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:opacity-50 duration-500" alt="">
-              </a>
-            </div>
-            <div>
-              <a href="#">
-                <img src="./assets/img/gallery-3.png" class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:opacity-50 duration-500" alt="">
-              </a>
-            </div>
-            <div>
-              <a href="#">
-                <img src="./assets/img/gallery-4.png" class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:opacity-50 duration-500" alt="">
-              </a>
-            </div>
+      <section id="gallery" class="relative">
+        <button class=" btn-prev absolute h-full w-1/6 z-50 bg-gradient-to-r from-black/60 text-left pl-8">
+          <i class="fa-solid fa-chevron-left text-white bg-primary text-xl rounded-circle px-2.5 py-1"></i>
+        </button>
+        <div class="slick">
+          <div>
+            <a  data-fancybox href="./assets/img/gallery-1.png" class="group relative overflow-hidden block">
+              <img src="./assets/img/gallery-1.png" class="group-[:hover]:scale-110 duration-500 w-full" alt="">
+              <div class=" flex items-center justify-center absolute opacity-0 group-[:hover]:opacity-100 w-full h-full bg-black/50 top-0 left-0 ">
+                <i class="fa-regular fa-plus fa-2x text-white border-4 rounded-circle px-1.5 py-1"></i>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a data-fancybox href="./assets/img/gallery-2.png"class="group relative overflow-hidden block">
+              <img src="./assets/img/gallery-2.png" class="group-[:hover]:scale-110 duration-500 w-full" alt="">
+              <div class=" flex items-center justify-center absolute opacity-0 group-[:hover]:opacity-100 w-full h-full bg-black/50 top-0 left-0 ">
+                <i class="fa-regular fa-plus fa-2x text-white border-4 rounded-circle px-1.5 py-1"></i>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a data-fancybox href="./assets/img/gallery-3.png"class="group relative overflow-hidden block">
+              <img src="./assets/img/gallery-3.png" class="group-[:hover]:scale-110 duration-500 w-full" alt="">
+              <div class=" flex items-center justify-center absolute opacity-0 group-[:hover]:opacity-100 w-full h-full bg-black/50 top-0 left-0 ">
+                <i class="fa-regular fa-plus fa-2x text-white border-4 rounded-circle px-1.5 py-1"></i>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a data-fancybox href="./assets/img/gallery-4.png"class="group relative overflow-hidden block">
+              <img src="./assets/img/gallery-4.png" class="group-[:hover]:scale-110 duration-500 w-full" alt="">
+              <div class=" flex items-center justify-center absolute opacity-0 group-[:hover]:opacity-100 w-full h-full bg-black/50 top-0 left-0 ">
+                <i class="fa-regular fa-plus fa-2x text-white border-4 rounded-circle px-1.5 py-1"></i> 
+              </div>
+            </a>
           </div>
         </div>
+        <button class="btn-next absolute h-full w-1/6 z-50 bg-gradient-to-l from-black/60 text-right top-0 right-0 pr-8">
+          <i class="fa-solid fa-chevron-right text-white bg-primary text-xl rounded-circle px-2.5 py-1"></i>
+        </button>
       </section>
 
       <!-- VISION -->
@@ -223,77 +239,158 @@
               </div>
               <div class="h-1 w-1/3 bg-white group-[:hover]:bg-yellow-300"></div>
             </div>
-            
           </div>
         </div>
         <hr>
       </section>
 
-      <!-- Maps -->
-      <section class="maps">
-        <div class="container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3484.5497700292995!2d-51.067457885228485!3d-29.148467397140497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ebec4d7e0d16f%3A0x238731abe6efc139!2sFrutas%20Bocad&#39;oro%20-%20Irm%C3%A3os%20Palandi!5e0!3m2!1spt-BR!2sbr!4v1678994705236!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
+      <!-- PRODUCTS -->
+      <section id="products" class="my-20 relative">
+        <div class="text-center text-secondary">
+          <h2 class="text-3xl">Nossos</h2>
+          <h2 class="text-4xl font-bold">Produtos</h2>
         </div>
+        <div class="text-center text-gray-600 text-sm mt-10">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros est, lobortis eu</p>
+        </div>
+        <div class="text-center mt-10 text-gray-600 font-bold">
+          <a href="#" class="border-gray-600 border-[0.5px] rounded-lg px-20 py-3 hover:bg-primary hover:border-primary duration-200 hover:text-white">Produtos</a>
+          <a href="#" class="border-gray-600 border-[0.5px] rounded-lg px-14 py-3 ml-2 hover:bg-primary hover:border-primary duration-200 hover:text-white">Peso Embalagens</a>
+        </div>
+        <div class="relative mt-20">
+          <button class="btn-prev absolute h-full w-1/6 z-50 text-left pl-8">
+            <i class="fa-solid fa-chevron-left text-white bg-primary text-xl rounded-circle px-2.5 py-1"></i>
+          </button>
+          <div class="slick">
+            <div class=" mx-2 my-8 w-1/4 shadow-item text-center hover:-translate-y-5 duration-200 rounded-tl-2xl rounded-b-2xl px-10 py-14">
+              <img src="./assets/img/fruit-3.png" class="mx-auto h-40" alt="">
+              <h2 class="text-primary font-bold text-xl mt-10 mb-6">Ameixa Amarela</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="mx-2 my-8 w-1/4 shadow-item text-center hover:-translate-y-5 duration-200 rounded-tl-2xl rounded-b-2xl px-10 py-14">
+              <img src="./assets/img/fruit-1.png" class="mx-auto h-40" alt="">
+              <h2 class="text-primary font-bold text-xl mt-10 mb-6">Maça Gala</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="mx-2 my-8 w-1/4 shadow-item text-center hover:-translate-y-5 duration-200 rounded-tl-2xl rounded-b-2xl px-10 py-14">
+              <img src="./assets/img/fruit-2.png" class="mx-auto h-40" alt="">
+              <h2 class="text-primary font-bold text-xl mt-10 mb-6">Maça Fuji</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="mx-2 my-8 w-1/4 shadow-item text-center hover:-translate-y-5 duration-200 rounded-tl-2xl rounded-b-2xl px-10 py-14">
+              <img src="./assets/img/fruit-3.png" class="mx-auto h-40" alt="">
+              <h2 class="text-primary font-bold text-xl mt-10 mb-6">Ameixa Amarela</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="mx-2 my-8 w-1/4 shadow-item text-center hover:-translate-y-5 duration-200 rounded-tl-2xl rounded-b-2xl px-10 py-14">
+              <img src="./assets/img/fruit-4.png" class="mx-auto h-40" alt="">
+              <h2 class="text-primary font-bold text-xl mt-10 mb-6">Ameixa Vermelha</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="mx-2 my-8 w-1/4 shadow-item text-center hover:-translate-y-5 duration-200 rounded-tl-2xl rounded-b-2xl px-10 py-14">
+              <img src="./assets/img/fruit-1.png" class="mx-auto h-40" alt="">
+              <h2 class="text-primary font-bold text-xl mt-10 mb-6">Maça Gala</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <button class="btn-next absolute h-full w-1/6 z-50 text-right pr-8 top-0 right-0">
+            <i class="fa-solid fa-chevron-right text-white bg-primary text-xl rounded-circle px-2.5 py-1"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="bg-secondary-dark text-white py-20 relative">
+        <div class="container">
+          <div class="flex gap-5">
+            <div class="w-1/3 text-3xl">
+              <h2 class="font-bold">Ficou com alguma dúvida?</h2>
+              <h2>Entre em contato conosco e retornaremos o mais breve possível!</h2>
+            </div>
+            <div class="w-2/3">
+              <form>
+                <div class="flex gap-5">
+                  <div class="w-1/2">
+                    <input type="text" placeholder="Nome" class="pl-0 bg-transparent focus:outline-none focus:shadow-none focus:ring-0 focus:border-b-white border-0 border-b-[0.3px] border-white w-full placeholder:text-white">
+                    <div class="mt-10">
+                      <input type="text" placeholder="Telefone" class="pl-0 bg-transparent focus:outline-none focus:shadow-none focus:ring-0 focus:border-b-white border-0 border-b-[0.3px] border-white w-full placeholder:text-white">
+                    </div>
+                  </div>
+                  <div class="w-1/2">
+                    <input type="text" placeholder="E-mail" class="pl-0 bg-transparent focus:outline-none focus:shadow-none focus:ring-0 focus:border-b-white border-0 border-b-[0.3px] border-white w-full placeholder:text-white">
+                    <div class="mt-10">
+                      <input type="text" placeholder="Assunto" class="pl-0 bg-transparent focus:outline-none focus:shadow-none focus:ring-0 focus:border-b-white border-0 border-b-[0.3px] border-white w-full placeholder:text-white">
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-10">
+                  <textarea  rows="3" placeholder="Mensagem" class="pl-0 bg-transparent focus:outline-none focus:shadow-none focus:ring-0 focus:border-b-white border-0 border-b-[0.3px] border-white w-full placeholder:text-white"></textarea>  
+                </div>
+                <div class="mt-8 text-right">
+                  <button type="submit" class=" text-sm border-[0.5px] rounded-lg px-16 py-3 hover:bg-primary hover:border-primary duration-200">Enviar</button>  
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <img src="./assets/img/sheet.png" alt="folhas" class="absolute -bottom-44 left-5 hover:-translate-y-5 duration-200">
+      </section>
+
+      <!-- MAP -->
+      <section id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3484.5497700292995!2d-51.067457885228485!3d-29.148467397140497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ebec4d7e0d16f%3A0x238731abe6efc139!2sFrutas%20Bocad&#39;oro%20-%20Irm%C3%A3os%20Palandi!5e0!3m2!1spt-BR!2sbr!4v1678994705236!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
       </section>
 
     </main>
   
 
     <!-- FOOTER -->
-    <footer id="footer">
-      <section class="bg-primary py-20  text-white">
-        <div class="container">
-         <div class="flex">
+    <footer id="footer" class="bg-primary pt-20  pb-10 text-white">
+      <div class="container">
+        <div class="flex">
           <div class="w-1/4">
-            <a href="">
+            <a href="index.html">
               <img src="./assets/img/logo.svg" alt="logo">
             </a>
           </div>
           <div class="w-1/4 text-sm font-bold">
-            <div>
-              <a href="">A Bocad’oro</a>
-            </div>
-            <div class="pt-10">
-              <a href="">Produtos</a>
+            <a href="#about">A Bocad'oro</a>
+            <div class="mt-6">
+              <a href="#products">Produtos</a>
             </div>
           </div>
           <div class="w-1/4 text-sm font-bold">
-            <div>
-              <a href="">Peso Embalagens</a>
-            </div>
-            <div class="pt-10">
-              <a href="">Fale Conosco</a>
+            <a href="#products">Peso Embalagens</a>
+            <div class="mt-6">
+              <a href="#contact">Fale Conosco</a>
             </div>
           </div>
           <div class="w-1/4 text-sm">
-            <div>
-              <a href="" class="font-bold">Contato</a>
-            </div>
-            <div class="pt-6">
-              <h2>+55 54 3207 5113</h2>
-              <a href="">palandi@terra.com.br</a>
+            <h2 class="font-bold">Contato</h2>
+            <div class="mt-6 opacity-70">
+              <a href="tel:555432075113">+55 54 3207 5113</a>
+              <a href="mailto:palandi@terra.com.br">palandi@terra.com.br</a>
             </div>
           </div>
           <div class="w-1/4 text-sm ">
-            <div>
-              <h2 class="font-bold">Endereço</h2>
-            </div>
-            <div class="pt-6">
+            <h2 class="font-bold">Endereço</h2>
+            <div class="mt-6 opacity-70">
               <h2>Rua Domingos Mazzochi,</h2>
               <h2>Caxias do Sul, 95060 000</h2>
             </div>
           </div>
-         </div>
-         <hr class="mt-14">
         </div>
-        <div class="mt-14 pl-12">
-          <h2>Copyright © 2023 - Todos os direitos reservados</h2>
-        </div>
-      </section>
+        <hr class=" mt-16 mb-10">
+        <h2 class="opacity-70">Copyright © 2023 - Todos os direitos reservados</h2>
+      </div>
     </footer>
 
-    <!-- js -->
+    <!-- JS -->
+    <script src="./assets/plugins/jquery/jquery.min.js"></script>
+    <script src="./assets/plugins/slick/slick.min.js"></script>
+    <script src="./assets/plugins/fancybox/js/fancybox.min.js"></script>
     <script src="./assets/js/main.js"></script>
+
 
   
   </body>
