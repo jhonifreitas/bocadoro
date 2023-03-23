@@ -3,7 +3,15 @@ $(function(){
         infinite: true,
         slidesToShow: 2,
         slidesToScroll: 1,
-        arrows: false 
+        arrows: false,
+        responsive: [
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+              }
+            }
+          ]
     })
     $('#gallery .btn-prev').click(function(){
         $('#gallery .slick').slick('slickPrev')
@@ -15,7 +23,15 @@ $(function(){
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        arrows: false 
+        arrows: false,
+        responsive: [
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+              }
+            }
+          ]
     })
     $('#products .btn-prev').click(function(){
         $('#products .slick').slick('slickPrev')
