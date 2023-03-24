@@ -57,30 +57,30 @@
     
     <!-- HEADER -->
     <header>
-      <nav class="w-full bg-primary py-5 text-white z-50"> 
+      <nav class="w-full bg-primary py-5 text-white"> 
         <div class="container">
-          <div class="flex items-center">
-            <a href="index.html">
+          <div class="flex items-center flex-wrap">
+            <a href="index.html" class="grow">
               <img src="./assets/img/logo.svg" alt="logo">
             </a>
-            <div class="flex grow">
+            <div class="flex grow md:flex-row flex-col">
 
-              <ul class="flex items-center ml-5 font-bold">
-                <li class="mx-6 active">
-                  <a href="#about">A Bocad'oro</a>
+              <ul class="flex items-center ml-5 font-bold md:flex-row flex-col">
+                <li class="mx-6 active my-3 md:my-0">
+                  <a href="./index.html#about">A Bocad'oro</a>
                 </li>
-                <li class="mx-6">
-                  <a href="#products">Produtos</a>
+                <li class="mx-6 my-3 md:my-0">
+                  <a href="./index.html#products">Produtos</a>
                 </li>
-                <li class="mx-6">
-                  <a href="#products">Pesos Embalagens</a>
+                <li class="mx-6 my-3 md:my-0">
+                  <a href="./index.html#products">Pesos Embalagens</a>
                 </li>
-                <li class="mx-6">
-                  <a href="#contact" class="bg-white text-primary px-10 py-3 rounded-lg hover:bg-primary-dark hover:text-white font-bold duration-200">Entre em Contato</a>
+                <li class="mx-6 my-3 md:my-0">
+                  <a href="./index.html#contact" class="bg-white text-primary px-10 py-3 rounded-lg hover:bg-primary-dark hover:text-white font-bold duration-200">Entre em Contato</a>
                 </li>
               </ul>
 
-              <ul class="flex items-center mx-10">
+              <ul class="flex items-center mx-10 my-5 md:my-0 justify-center">
                 <li class="mx-3">
                   <a href="#"> 
                     <img src="./assets/img/flag-brazil.svg" alt="flag-brazil">
@@ -99,7 +99,7 @@
 
               </ul>
 
-              <ul class="flex items-center">
+              <ul class="flex items-center justify-center">
                 <li class="mx-3">
                   <a href="#" target="_blank">
                     <i class="fa-brands fa-facebook-f"></i>
@@ -111,9 +111,11 @@
                   </a>
                 </li>
                 <li class="mx-3">
-                  <a href="#" target="_blank">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </a>
+                  <div modal-open="#modal-search" class="cursor-pointer">
+                    <a href="#modal-search">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                  </div>
                 </li>
               </ul>
 
@@ -143,48 +145,77 @@
           </div>
         </div>
       </section>
+
+      <!-- MODAL-SEARCH -->
+      <div id="modal-search" class="modal fixed top-0 left-0 right-0 z-[999]" style="display: none;">
+        <div modal-close class="absolute top-0 left-0 right-0 bottom-0 bg-black/50 mix-blend-multiply"></div>
+        <button type="button" modal-close class="absolute right-5 top-5 text-white text-3xl">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </button>
+        <div class="overflow-auto h-screen py-5">
+          <div class="container flex items-center min-h-full">
+            <div class="relative bg-white p-20 rounded-2xl w-full">
+              <div class="relative border-2 border-gray-400 rounded-full flex my-1">
+                <input type="text" placeholder="O que você está procurando?" class=" text-gray-700 pl-6 bg-transparent focus:outline-none focus:shadow-none focus:ring-0 focus:border-b-white border-0 border-b-[0.3px] border-white w-full">
+                <a href="./search.html" class="my-auto">
+                  <i class="fa-solid fa-magnifying-glass border-2 text-white bg-primary p-4 m-2 rounded-full"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- FOOTER -->
     <footer id="footer" class="bg-primary pt-20  pb-10 text-white">
       <div class="container">
-        <div class="flex">
-          <div class="w-1/4">
+        <div class="flex flex-col gap-y-8 md:flex-row text-center md:text-left">
+          <div class="md:w-1/4 mb-10">
             <a href="index.html">
-              <img src="./assets/img/logo.svg" alt="logo">
+              <img src="./assets/img/logo.svg" alt="logo" class="mx-auto md:ml-0">
             </a>
           </div>
-          <div class="w-1/4 text-sm font-bold">
-            <a href="#about">A Bocad'oro</a>
+          <div class="md:w-1/4 text-sm font-bold mb-5">
+            <a href="./index.html#about">A Bocad'oro</a>
             <div class="mt-6">
-              <a href="#products">Produtos</a>
+              <a href="./index.html#products">Produtos</a>
             </div>
           </div>
-          <div class="w-1/4 text-sm font-bold">
-            <a href="#products">Peso Embalagens</a>
+          <div class="md:w-1/4 text-sm font-bold mb-5">
+            <a href="./index.html#products">Peso Embalagens</a>
             <div class="mt-6">
-              <a href="#contact">Fale Conosco</a>
+              <a href="./index.html#contact">Fale Conosco</a>
             </div>
           </div>
-          <div class="w-1/4 text-sm">
+          <div class="md:w-1/4 text-sm">
             <h2 class="font-bold">Contato</h2>
-            <div class="mt-6 opacity-70">
-              <a href="tel:555432075113">+55 54 3207 5113</a>
-              <a href="mailto:palandi@terra.com.br">palandi@terra.com.br</a>
+            <div class="md:mt-6 opacity-70 mb-5">
+              <a href="tel:555432075113" class="block">+55 54 3207 5113</a>
+              <a href="mailto:palandi@terra.com.br" class="block">palandi@terra.com.br</a>
             </div>
           </div>
-          <div class="w-1/4 text-sm ">
+          <div class="md:w-1/4 text-sm ">
             <h2 class="font-bold">Endereço</h2>
-            <div class="mt-6 opacity-70">
+            <div class="md:mt-6 opacity-70 mb-5">
               <h2>Rua Domingos Mazzochi,</h2>
               <h2>Caxias do Sul, 95060 000</h2>
             </div>
           </div>
         </div>
-        <hr class=" mt-16 mb-10">
+        <hr class="mt-8 md:mt-16 mb-10">
         <h2 class="opacity-70">Copyright © 2023 - Todos os direitos reservados</h2>
       </div>
     </footer>
+
+    <!-- JS -->
+    <script src="./assets/plugins/jquery/jquery.min.js"></script>
+    <script src="./assets/plugins/slick/slick.min.js"></script>
+    <script src="./assets/plugins/fancybox/js/fancybox.min.js"></script>
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/main.js"></script>
+
   </body>
 
 </html>

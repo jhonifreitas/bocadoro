@@ -1,4 +1,5 @@
 $(function(){
+  // CARROSEL-GALLERY
     $('#gallery .slick').slick({
         infinite: true,
         slidesToShow: 2,
@@ -19,6 +20,8 @@ $(function(){
     $('#gallery .btn-next').click(function(){
         $('#gallery .slick').slick('slickNext')
     })
+
+    // CARROSEL-PRODUCTS
     $('#products .slick').slick({
         infinite: true,
         slidesToShow: 4,
@@ -38,5 +41,16 @@ $(function(){
     })
     $('#products .btn-next').click(function(){
         $('#products .slick').slick('slickNext')
+    })
+
+    // MODAL
+    $('[modal-open]').click(function(){
+        var id = $(this).attr('modal-open');
+      $(id).fadeIn('slow');
+      $('body').css('overflow', 'hidden');
+    })
+    $('[modal-close]').click(function(){
+      $('.modal').fadeOut('slow');
+      $('body').css('overflow', '');
     })
 })
