@@ -70,17 +70,17 @@
             <div class="flex grow md:flex-row flex-col">
 
               <ul class="flex items-center ml-5 font-bold md:flex-row flex-col">
-                <li class="mx-6 active my-3 md:my-0">
-                  <a href="#about">A Bocad'oro</a>
+                <li class="mx-6 my-3 md:my-0">
+                  <a href="#about" class="scroll">A Bocad'oro</a>
                 </li>
                 <li class="mx-6 my-3 md:my-0">
-                  <a href="#products">Produtos</a>
+                  <a href="#products" class="scroll">Produtos</a>
                 </li>
                 <li class="mx-6 my-3 md:my-0">
-                  <a href="#products">Pesos Embalagens</a>
+                  <a href="#products" class="scroll">Pesos Embalagens</a>
                 </li>
                 <li class="mx-6 mt-3 md:mt-0">
-                  <a href="#contact" class="bg-white text-primary md:bg-primary md:text-white px-10 py-3 rounded-lg hover:bg-primary-dark hover:text-white duration-200 whitespace-nowrap block">Entre em Contato</a>
+                  <a href="#contact" class="scroll bg-white text-primary md:bg-primary md:text-white px-10 py-3 rounded-lg hover:bg-primary-dark hover:text-white duration-200 whitespace-nowrap block">Entre em Contato</a>
                 </li>
               </ul>
 
@@ -154,7 +154,7 @@
             </div>
           </div>
         </div>
-        <h2 class="absolute -bottom-12 title-bg -left-8 whitespace-nowrap text-21xl font-bold z-50 uppercase leading-none opacity-25">Frutas bocad'oro</h2>
+        <h2 class="absolute -bottom-12 title-bg -left-8 whitespace-nowrap text-21xl font-bold z-40 uppercase leading-none opacity-25">Frutas bocad'oro</h2>
       </section>
 
       <!-- ABOUT -->
@@ -175,7 +175,7 @@
 
       <!-- GALLERY -->
       <section id="gallery" class="relative">
-        <button class=" btn-prev absolute h-full w-1/6 z-50 bg-gradient-to-r from-black/60 text-left pl-8">
+        <button class=" btn-prev absolute h-full w-1/6 z-40 bg-gradient-to-r from-black/60 text-left pl-8">
           <i class="fa-solid fa-chevron-left text-white bg-primary text-xl rounded-circle px-2.5 py-1"></i>
         </button>
         <div class="slick">
@@ -212,7 +212,7 @@
             </a>
           </div>
         </div>
-        <button class="btn-next absolute h-full w-1/6 z-50 bg-gradient-to-l from-black/60 text-right top-0 right-0 pr-8">
+        <button class="btn-next absolute h-full w-1/6 z-40 bg-gradient-to-l from-black/60 text-right top-0 right-0 pr-8">
           <i class="fa-solid fa-chevron-right text-white bg-primary text-xl rounded-circle px-2.5 py-1"></i>
         </button>
       </section>
@@ -246,9 +246,9 @@
         </div>
         <hr class="invisible md:visible">
       </section>
-
+ 
       <!-- PRODUCTS -->
-      <section id="products" class="my-20 relative">
+      <section id="products" class="py-20 relative">
         <div class="text-center text-secondary ">
           <h2 class="text-3xl">Nossos</h2>
           <h2 class="text-4xl font-bold">Produtos</h2>
@@ -257,11 +257,11 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros est, lobortis eu</p>
         </div>
         <div class="text-center mt-10 text-gray-600 font-bold flex flex-col md:flex-row gap-x-20 md:justify-center px-10 gap-y-3 md:gap-3">
-          <a href="#" class="border-gray-600 border-[0.5px] rounded-lg px-20 py-3 hover:bg-primary hover:border-primary duration-200 hover:text-white">Produtos</a>
+          <a href="#" class="bg-primary text-white border-gray-600 border-[0.5px] rounded-lg px-20 py-3">Produtos</a>
           <a href="#" class="border-gray-600 border-[0.5px] rounded-lg px-14 py-3 hover:bg-primary hover:border-primary duration-200 hover:text-white">Peso Embalagens</a>
         </div>
         <div class="relative mt-20">
-          <button class="btn-prev absolute h-full w-1/6 z-50 text-left pl-8">
+          <button class="btn-prev absolute h-full w-1/6 z-40 text-left pl-8">
             <i class="fa-solid fa-chevron-left text-white bg-primary text-xl rounded-circle px-2.5 py-1"></i>
           </button>
           <div class="slick">
@@ -296,7 +296,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
-          <button class="btn-next absolute h-full w-1/6 z-50 text-right pr-8 top-0 right-0">
+          <button class="btn-next absolute h-full w-1/6 z-40 text-right pr-8 top-0 right-0">
             <i class="fa-solid fa-chevron-right text-white bg-primary text-xl rounded-circle px-2.5 py-1"></i>
           </button>
         </div>
@@ -379,11 +379,11 @@
         </button>
         <div class="overflow-auto h-screen py-5">
           <div class="container flex items-center min-h-full">
-            <div class="relative bg-white p-20 rounded-2xl w-full">
-              <div class="relative border-2 border-gray-400 rounded-full flex my-1">
-                <input type="text" placeholder="O que você está procurando?" class=" text-gray-700 pl-6 bg-transparent focus:outline-none focus:shadow-none focus:ring-0 focus:border-b-white border-0 border-b-[0.3px] border-white w-full">
+            <div class="relative bg-white p-10 md:p-20 rounded-2xl w-full">
+              <div class="relative border border-gray-400 rounded-full flex my-1">
+                <input type="text" placeholder="O que você está procurando?" class=" text-gray-700 pl-6 bg-transparent focus:outline-none focus:shadow-none focus:ring-0 border-0 w-full">
                 <a href="./search.html" class="my-auto">
-                  <i class="fa-solid fa-magnifying-glass border-2 text-white bg-primary p-4 m-2 rounded-full"></i>
+                  <i class="fa-solid fa-magnifying-glass border-2 text-white bg-primary p-4 m-1 rounded-full"></i>
                 </a>
               </div>
 
@@ -395,36 +395,36 @@
     </main>
 
     <!-- FOOTER -->
-    <footer id="footer" class="bg-primary pt-20  pb-10 text-white">
+    <footer id="footer" class="bg-primary pt-16 md:pt-20  pb-10 text-white">
       <div class="container">
-        <div class="flex flex-col gap-y-8 md:flex-row text-center md:text-left">
-          <div class="md:w-1/4 mb-10">
+        <div class="flex flex-col gap-y-5 md:flex-row text-center md:text-left">
+          <div class="md:w-1/4 mb-5">
             <a href="index.html">
               <img src="./assets/img/logo.svg" alt="logo" class="mx-auto md:ml-0">
             </a>
           </div>
-          <div class="md:w-1/4 text-sm font-bold mb-5">
+          <div class="md:w-1/4 text-sm font-bold">
             <a href="#about">A Bocad'oro</a>
-            <div class="mt-6">
+            <div class="mt-5">
               <a href="#products">Produtos</a>
             </div>
           </div>
           <div class="md:w-1/4 text-sm font-bold mb-5">
             <a href="#products">Peso Embalagens</a>
-            <div class="mt-6">
+            <div class="mt-5">
               <a href="#contact">Fale Conosco</a>
             </div>
           </div>
           <div class="md:w-1/4 text-sm">
             <h2 class="font-bold">Contato</h2>
-            <div class="md:mt-6 opacity-70 mb-5">
+            <div class="md:mt-5 opacity-70 mb-5">
               <a href="tel:555432075113" class="block">+55 54 3207 5113</a>
               <a href="mailto:palandi@terra.com.br" class="block">palandi@terra.com.br</a>
             </div>
           </div>
           <div class="md:w-1/4 text-sm ">
             <h2 class="font-bold">Endereço</h2>
-            <div class="md:mt-6 opacity-70 mb-5">
+            <div class="md:mt-5 opacity-70 mb-5">
               <h2>Rua Domingos Mazzochi,</h2>
               <h2>Caxias do Sul, 95060 000</h2>
             </div>
