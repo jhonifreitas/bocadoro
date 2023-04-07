@@ -15,11 +15,28 @@ nav li.active:after{
 }
 #banner .title-bg{
     color: transparent;
-    -webkit-text-stroke: 0.3px white;
+    -webkit-text-stroke: 1px white;
 }
 #gallery .slick .slick-list{
     padding: 0 80px;
 }
 #products .slick .slick-list{
     padding: 0 80px;
+}
+
+/* animação */
+
+.scroll-text{
+    text-align: right;
+    transform: translateX(-100%);
+    animation: my-animation 15s linear infinite;
+}
+  
+@keyframes my-animation {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
 }
